@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Borrow Book</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      margin: 0;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background: #2980b9;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>📖 Borrow Book</h1>
+</header>
+
+<nav>
+  <a href="Home.html">Home</a>
+  <a href="Books.html">Books</a>
+  <a href="Contact.html">Contact</a>
+</nav>
+
+<main>
+
+<h2>Borrow Form</h2>
+
+<form>
+  Name:<br>
+  <input type="text" name="name">
+
+  Select Book:<br>
+  <select name="book">
+    <option>Secret Garden</option>
+    <option>Tuesdays with Morrie</option>
+    <option>The Girl who Drunk the Moon</option>
+  </select>
+
+  Date Borrowed:<br>
+  <input type="date" name="date">
+
+  <input type="submit" value="Submit">
+</form>
+
+</main>
+
+</body>
+</html>

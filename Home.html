@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Library Management System Home Page" />
+  <title>Library Management System — Home</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 16px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a[aria-current="page"] {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 24px;
+    }
+
+    .hero {
+      background: #eaf2ff;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      margin-top: 0;
+    }
+
+    .hero button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #3498db;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #2980b9;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      background: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      width: 200px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>📚 Library Management System</h1>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="Home.html" aria-current="page">Home</a></li>
+      <li><a href="Books.html">Books</a></li>
+      <li><a href="Borrow.html">Borrow</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h2>Welcome to the Library</h2>
+    <p>Manage books, track borrowers, and explore knowledge easily and efficiently.</p>
+    <button onclick="location.href='Books.html'">Browse Books</button>
+  </section>
+
+  <section>
+    <h2>System Features</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Book Management</h3>
+        <p>Add, update, and organize all library books easily.</p>
+      </div>
+
+      <div class="card">
+        <h3>Borrow & Return</h3>
+        <p>Track borrowed books and due dates easily.</p>
+      </div>
+
+      <div class="card">
+        <h3>Search System</h3>
+        <p>Quickly find books by title, author, or category.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat-box">
+      <h3>0</h3>
+      <p>Total Books</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>0</h3>
+      <p>Borrowed Books</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© Library Management System</p>
+</footer>
+
+</body>
+</html>
